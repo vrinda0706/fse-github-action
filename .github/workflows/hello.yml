@@ -1,6 +1,6 @@
 name: My First Workflow
 
-on: pull_request
+on: push
 
 jobs:
   say-hello:
@@ -13,7 +13,8 @@ jobs:
         run: echo "Vrinda"
 
   say-bye:
-    runs-on: ubuntu-latest  
+    runs-on: ubuntu-latest 
+    needs: say-hello 
     steps:
       - name: print goodbye message
         run: echo "Goodbye from second job "
