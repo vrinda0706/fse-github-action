@@ -26,9 +26,10 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v4
-        
+
       - name: Check Node version
         run: node -v 
+        
 
       - name: Print Goodbye
         run: echo "Goodbye from second job"
