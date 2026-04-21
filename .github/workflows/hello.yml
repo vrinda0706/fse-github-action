@@ -30,6 +30,9 @@ jobs:
       - name: Check Node version
         run: node -v 
         
+      - name: Check Node version
+        run: node -v 
+        
 
       - name: Print Goodbye
         run: echo "Goodbye from second job"
