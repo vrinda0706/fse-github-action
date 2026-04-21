@@ -34,5 +34,8 @@ jobs:
         run: node -v 
         
 
+      - name: starting test
+        run: npm run test 
+
       - name: Print Goodbye
         run: echo "Goodbye from second job"
