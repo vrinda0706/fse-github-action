@@ -32,6 +32,11 @@ jobs:
         
       - name: Check Node version
         run: node -v 
+
+  deploy: 
+    runs-on: ubuntu-latest
+    needs: say-hello
+
         
 
       - name: starting test
