@@ -35,7 +35,7 @@ jobs:
 
   deploy: 
     runs-on: ubuntu-latest
-    needs: say-hello
+    needs: ci-pipeline
 
     steps:
       - name: Checkout code
@@ -58,7 +58,7 @@ jobs:
 
   ci-pipeline:
    runs-on: ubuntu-latest
-   needs: deploy
+   needs: say-bye
 
    steps:
     - name: Checkout code 
