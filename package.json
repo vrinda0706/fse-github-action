@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo test successfull"
+    "lint": "eslint .",
+    "test": "echo test successfull",
+    "build": "echo build successful"
   },
   "repository": {
     "type": "git",
